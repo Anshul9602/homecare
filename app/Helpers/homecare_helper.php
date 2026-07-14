@@ -19,37 +19,66 @@ function hc_whatsapp_link(string $message = ''): string
     return 'https://wa.me/' . hc_config()->whatsapp . $msg;
 }
 
+function hc_logo(): string
+{
+    return base_url('image/logo.png');
+}
+
+function hc_banner(bool $mobile = false): string
+{
+    return base_url('image/' . ($mobile ? 'homebannermob.png' : 'homebannerbg.png'));
+}
+
+function hc_why_image(): string
+{
+    return base_url('image/whyf.png');
+}
+
+function hc_service_image(string $filename): string
+{
+    return base_url('image/service/' . ltrim($filename, '/'));
+}
+
 function hc_photo(string $key): string
 {
     $photos = [
         'hero'           => 'https://images.unsplash.com/photo-1631217868264-e5b67bbdb1e5?w=800&q=80',
-        'about'          => 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80',
-        'about-team'     => 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&q=80',
-        'staff-hero'     => 'https://images.unsplash.com/photo-1582750433449-648ed127b54e?w=1200&q=80',
-        'service-nursing'=> 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80',
-        'service-gda'    => 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80',
-        'service-elder'  => 'https://images.unsplash.com/photo-1576765608530-5aabcf25294a?w=600&q=80',
-        'service-physio' => 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80',
-        'service-baby'   => 'https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&q=80',
-        'service-doctor' => 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80',
-        'service-icu'    => 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&q=80',
-        'service-equipment' => 'https://images.unsplash.com/photo-1581595220892-b0739db3a262?w=600&q=80',
-        'equip-oxygen'   => 'https://images.unsplash.com/photo-1581595220892-b0739db3a262?w=400&q=80',
-        'equip-bed'      => 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80',
-        'equip-wheelchair'=> 'https://images.unsplash.com/photo-1598454306273-c5ec4d70398f?w=400&q=80',
-        'equip-cylinder' => 'https://images.unsplash.com/photo-1584515933487-779824d29309?w=400&q=80',
-        'equip-bipap'    => 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=400&q=80',
-        'equip-suction'  => 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&q=80',
+        'about'          => hc_service_image('24x7-nursing-support.png'),
+        'faq'            => hc_service_image('gda-patient-attendant.png'),
+        'about-team'     => hc_service_image('companion-care.png'),
+        'staff-hero'     => hc_service_image('dressing-wound-care.png'),
+        'service-home-nursing' => hc_service_image('home-nursing-care.png'),
+        'service-gda'    => hc_service_image('gda-patient-attendant.png'),
+        'service-elder'  => hc_service_image('elderly-care.png'),
+        'service-baby'   => hc_service_image('mother-baby-care.png'),
+        'service-post-surgical' => hc_service_image('post-surgical-care.png'),
+        'service-icu'    => hc_service_image('icu-care-at-home.png'),
+        'service-physio' => hc_service_image('physiotherapy-at-home.png'),
+        'service-doctor' => hc_service_image('doctor-visit-at-home.png'),
+        'service-palliative' => hc_service_image('palliative-care.png'),
+        'service-dressing' => hc_service_image('dressing-wound-care.png'),
+        'service-injection' => hc_service_image('injection-iv-drip.png'),
+        'service-bedridden' => hc_service_image('bedridden-patient-care.png'),
+        'service-equipment' => hc_service_image('medical-equipment-rental.png'),
+        'service-companion' => hc_service_image('companion-care.png'),
+        'service-support' => hc_service_image('24x7-nursing-support.png'),
+        // Legacy keys kept for backward compatibility
+        'service-nursing'=> hc_service_image('home-nursing-care.png'),
+        'equip-oxygen'   => hc_service_image('medical-equipment-rental.png'),
+        'equip-bed'      => hc_service_image('medical-equipment-rental.png'),
+        'equip-wheelchair'=> hc_service_image('medical-equipment-rental.png'),
+        'equip-cylinder' => hc_service_image('icu-care-at-home.png'),
+        'equip-bipap'    => hc_service_image('icu-care-at-home.png'),
+        'equip-suction'  => hc_service_image('medical-equipment-rental.png'),
         'staff-1'        => 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=300&q=80',
         'staff-2'        => 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&q=80',
         'staff-3'        => 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300&q=80',
         'staff-4'        => 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=300&q=80',
         'staff-5'        => 'https://images.unsplash.com/photo-1582750433449-648ed127b54e?w=300&q=80',
         'staff-6'        => 'https://images.unsplash.com/photo-1631217868264-e5b67bbdb1e5?w=300&q=80',
-        'blog-1'         => 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80',
-        'blog-2'         => 'https://images.unsplash.com/photo-1576765608530-5aabcf25294a?w=600&q=80',
-        'blog-3'         => 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80',
-        'faq'            => 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&q=80',
+        'blog-1'         => hc_service_image('injection-iv-drip.png'),
+        'blog-2'         => hc_service_image('companion-care.png'),
+        'blog-3'         => hc_service_image('post-surgical-care.png'),
         '404'            => 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&q=80',
         'location'       => 'https://images.unsplash.com/photo-1587474260586-136574528ed5?w=400&q=80',
     ];

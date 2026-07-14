@@ -12,8 +12,8 @@
         <div class="cj-areas-grid">
             <?php foreach (hc_config()->locations as $slug => $name): ?>
             <a href="<?= site_url('locations/' . $slug) ?>" class="cj-area-card">
-                <img src="<?= hc_photo('location') ?>" alt="<?= esc($name) ?>" loading="lazy">
-                <span><?= esc($name) ?></span>
+                <span class="cj-area-card__icon" aria-hidden="true"><?= hc_icon('location') ?></span>
+                <span class="cj-area-card__name"><?= esc($name) ?></span>
             </a>
             <?php endforeach; ?>
         </div>

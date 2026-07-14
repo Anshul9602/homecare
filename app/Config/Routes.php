@@ -25,9 +25,16 @@ $routes->get('home-nursing-services', 'Portal::service/home-nursing-services');
 $routes->get('gda-patient-attendant', 'Portal::service/gda-patient-attendant');
 $routes->get('elder-care', 'Portal::service/elder-care');
 $routes->get('mother-baby-care', 'Portal::service/mother-baby-care');
+$routes->get('post-surgical-care', 'Portal::service/post-surgical-care');
 $routes->get('physiotherapy', 'Portal::service/physiotherapy');
 $routes->get('doctor-visit', 'Portal::service/doctor-visit');
 $routes->get('icu-care', 'Portal::service/icu-care');
+$routes->get('palliative-care', 'Portal::service/palliative-care');
+$routes->get('dressing-wound-care', 'Portal::service/dressing-wound-care');
+$routes->get('injection-iv-drip', 'Portal::service/injection-iv-drip');
+$routes->get('bedridden-patient-care', 'Portal::service/bedridden-patient-care');
+$routes->get('companion-care', 'Portal::service/companion-care');
+$routes->get('24x7-nursing-support', 'Portal::service/24x7-nursing-support');
 $routes->get('medical-equipment', 'Portal::equipment');
 
 $routes->get('locations/(:segment)', 'Portal::location/$1');

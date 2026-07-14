@@ -5,11 +5,7 @@
     <div class="cj-container cj-footer__grid">
         <div>
             <a href="<?= site_url('/') ?>" class="cj-logo cj-logo--footer">
-                <span class="cj-logo__icon"><?= hc_icon('plus') ?></span>
-                <span class="cj-logo__text">
-                    <strong><?= esc(hc_config()->brandName) ?></strong>
-                    <small>Home Healthcare Jaipur</small>
-                </span>
+                <img src="<?= hc_logo() ?>" alt="<?= esc(hc_config()->brandName) ?> — Home Healthcare Jaipur" class="cj-logo__img" width="160" height="44">
             </a>
             <p class="cj-footer__desc">Compassionate, professional home nursing &amp; patient care across Jaipur. Available 24×7.</p>
         </div>
@@ -35,9 +31,9 @@
         <div>
             <h4>Contact</h4>
             <ul class="cj-footer__contact">
-                <li><?= hc_icon('phone') ?> <a href="<?= hc_phone_link() ?>"><?= esc(hc_config()->phoneDisplay) ?></a></li>
-                <li><?= hc_icon('email') ?> <a href="mailto:<?= esc(hc_config()->email) ?>"><?= esc(hc_config()->email) ?></a></li>
-                <li><?= hc_icon('location') ?> <?= esc(hc_config()->address) ?></li>
+                <li><?= hc_icon('phone', 'sm') ?> <a href="<?= hc_phone_link() ?>"><?= esc(hc_config()->phoneDisplay) ?></a></li>
+                <li><?= hc_icon('email', 'sm') ?> <a href="mailto:<?= esc(hc_config()->email) ?>"><?= esc(hc_config()->email) ?></a></li>
+                <li><?= hc_icon('location', 'sm') ?> <?= esc(hc_config()->address) ?></li>
             </ul>
         </div>
     </div>

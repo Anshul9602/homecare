@@ -7,3 +7,147 @@ in APPPATH\Config\Routes.php on line 36.
  4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  6 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\homecare\\public\\index.php')
+CRITICAL - 2026-07-14 05:48:15 --> Error: Call to undefined function hc_render()
+[Method: GET, Route: .well-known/appspecific/com.chrome.devtools.json]
+in APPPATH\Config\Routes.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: .well-known/appspecific/com.chrome.devtools.json\'.')
+ 2 SYSTEMPATH\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 3 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\homecare\\public\\index.php')
+CRITICAL - 2026-07-14 05:49:29 --> Error: Call to undefined function hc_render()
+[Method: GET, Route: .well-known/appspecific/com.chrome.devtools.json]
+in APPPATH\Config\Routes.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: .well-known/appspecific/com.chrome.devtools.json\'.')
+ 2 SYSTEMPATH\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 3 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\homecare\\public\\index.php')
+CRITICAL - 2026-07-14 05:50:35 --> Error: Call to undefined function hc_render()
+[Method: GET, Route: .well-known/appspecific/com.chrome.devtools.json]
+in APPPATH\Config\Routes.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: .well-known/appspecific/com.chrome.devtools.json\'.')
+ 2 SYSTEMPATH\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 3 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\homecare\\public\\index.php')
+CRITICAL - 2026-07-14 05:51:12 --> Error: Call to undefined function hc_render()
+[Method: GET, Route: .well-known/appspecific/com.chrome.devtools.json]
+in APPPATH\Config\Routes.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: .well-known/appspecific/com.chrome.devtools.json\'.')
+ 2 SYSTEMPATH\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 3 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\homecare\\public\\index.php')
+CRITICAL - 2026-07-14 05:51:24 --> Error: Call to undefined function hc_render()
+[Method: GET, Route: .well-known/appspecific/com.chrome.devtools.json]
+in APPPATH\Config\Routes.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: .well-known/appspecific/com.chrome.devtools.json\'.')
+ 2 SYSTEMPATH\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 3 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\homecare\\public\\index.php')
+CRITICAL - 2026-07-14 05:52:27 --> Error: Call to undefined function hc_render()
+[Method: GET, Route: .well-known/appspecific/com.chrome.devtools.json]
+in APPPATH\Config\Routes.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: .well-known/appspecific/com.chrome.devtools.json\'.')
+ 2 SYSTEMPATH\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 3 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\homecare\\public\\index.php')
+CRITICAL - 2026-07-14 06:31:54 --> Error: Call to undefined function hc_render()
+[Method: GET, Route: image/service/mobility-assistance.png]
+in APPPATH\Config\Routes.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: image/service/mobility-assistance.png\'.')
+ 2 SYSTEMPATH\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 3 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\homecare\\public\\index.php')
+CRITICAL - 2026-07-14 06:32:04 --> Error: Call to undefined function hc_render()
+[Method: GET, Route: image/service/mobility-assistance.png]
+in APPPATH\Config\Routes.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: image/service/mobility-assistance.png\'.')
+ 2 SYSTEMPATH\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 3 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\homecare\\public\\index.php')
+CRITICAL - 2026-07-14 06:36:18 --> Error: Call to undefined function hc_render()
+[Method: GET, Route: .well-known/appspecific/com.chrome.devtools.json]
+in APPPATH\Config\Routes.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: .well-known/appspecific/com.chrome.devtools.json\'.')
+ 2 SYSTEMPATH\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 3 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\homecare\\public\\index.php')
+CRITICAL - 2026-07-14 06:36:44 --> Error: Call to undefined function hc_render()
+[Method: GET, Route: .well-known/appspecific/com.chrome.devtools.json]
+in APPPATH\Config\Routes.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: .well-known/appspecific/com.chrome.devtools.json\'.')
+ 2 SYSTEMPATH\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 3 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\homecare\\public\\index.php')
+CRITICAL - 2026-07-14 06:36:49 --> Error: Call to undefined function hc_render()
+[Method: GET, Route: .well-known/appspecific/com.chrome.devtools.json]
+in APPPATH\Config\Routes.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: .well-known/appspecific/com.chrome.devtools.json\'.')
+ 2 SYSTEMPATH\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 3 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\homecare\\public\\index.php')
+CRITICAL - 2026-07-14 06:38:39 --> Error: Call to undefined function hc_render()
+[Method: GET, Route: .well-known/appspecific/com.chrome.devtools.json]
+in APPPATH\Config\Routes.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: .well-known/appspecific/com.chrome.devtools.json\'.')
+ 2 SYSTEMPATH\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 3 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\homecare\\public\\index.php')
+CRITICAL - 2026-07-14 06:38:43 --> Error: Call to undefined function hc_render()
+[Method: GET, Route: .well-known/appspecific/com.chrome.devtools.json]
+in APPPATH\Config\Routes.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: .well-known/appspecific/com.chrome.devtools.json\'.')
+ 2 SYSTEMPATH\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 3 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\homecare\\public\\index.php')
+CRITICAL - 2026-07-14 06:45:21 --> Error: Call to undefined function hc_render()
+[Method: GET, Route: .well-known/appspecific/com.chrome.devtools.json]
+in APPPATH\Config\Routes.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: .well-known/appspecific/com.chrome.devtools.json\'.')
+ 2 SYSTEMPATH\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 3 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\homecare\\public\\index.php')
+CRITICAL - 2026-07-14 06:45:57 --> Error: Call to undefined function hc_render()
+[Method: GET, Route: .well-known/appspecific/com.chrome.devtools.json]
+in APPPATH\Config\Routes.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: .well-known/appspecific/com.chrome.devtools.json\'.')
+ 2 SYSTEMPATH\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 3 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\homecare\\public\\index.php')
+CRITICAL - 2026-07-14 06:46:51 --> Error: Call to undefined function hc_render()
+[Method: GET, Route: .well-known/appspecific/com.chrome.devtools.json]
+in APPPATH\Config\Routes.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: .well-known/appspecific/com.chrome.devtools.json\'.')
+ 2 SYSTEMPATH\CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 3 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 6 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\homecare\\public\\index.php')

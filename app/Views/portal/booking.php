@@ -47,12 +47,12 @@
         <div class="cj-card">
             <h3>Why Book With Us?</h3>
             <ul class="cj-hero__checks">
-                <li><?= hc_icon('check') ?> Quick Response — Staff assigned within hours</li>
-                <li><?= hc_icon('check') ?> Verified &amp; Trained Professionals</li>
-                <li><?= hc_icon('check') ?> Free Consultation</li>
-                <li><?= hc_icon('check') ?> Affordable Packages</li>
-                <li><?= hc_icon('check') ?> 24×7 Emergency Support</li>
-                <li><?= hc_icon('check') ?> Personalized Care Plans</li>
+                <li><?= hc_icon('circle-check', 'sm') ?> Quick Response — Staff assigned within hours</li>
+                <li><?= hc_icon('circle-check', 'sm') ?> Verified &amp; Trained Professionals</li>
+                <li><?= hc_icon('circle-check', 'sm') ?> Free Consultation</li>
+                <li><?= hc_icon('circle-check', 'sm') ?> Affordable Packages</li>
+                <li><?= hc_icon('circle-check', 'sm') ?> 24×7 Emergency Support</li>
+                <li><?= hc_icon('circle-check', 'sm') ?> Personalized Care Plans</li>
             </ul>
             <div style="margin-top:2rem;">
                 <p><strong>Or call us directly:</strong></p>

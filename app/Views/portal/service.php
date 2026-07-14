@@ -18,7 +18,7 @@
             <h2>What We Offer</h2>
             <ul class="cj-hero__checks">
                 <?php foreach ($service['items'] as $item): ?>
-                <li><?= hc_icon('check') ?> <?= esc($item) ?></li>
+                <li><?= hc_icon('circle-check', 'sm') ?> <?= esc($item) ?></li>
                 <?php endforeach; ?>
             </ul>
             <p style="margin-top:1.5rem;color:var(--cj-text);">Our trained professionals deliver compassionate care tailored to your family's needs. Available across all major areas of Jaipur with 24×7 emergency support.</p>
