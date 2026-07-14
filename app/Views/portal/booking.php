@@ -1,13 +1,11 @@
-<?= view('partials/breadcrumb') ?>
+<?= view('partials/page-hero', [
+    'heroTag'      => 'Book Now',
+    'heroTitle'    => 'Book a <span>Caregiver</span>',
+    'heroSubtitle' => 'Fill in the details and we\'ll assign the right nurse or GDA for your patient.',
+    'heroImage'    => hc_service_image('bedridden-patient-care.png'),
+]) ?>
 
-<section class="cj-page-hero">
-    <div class="cj-container">
-        <h1 class="cj-page-hero__title">Book a Caregiver</h1>
-        <p class="cj-page-hero__subtitle">Fill in the details and we'll assign the right nurse or GDA for your patient</p>
-    </div>
-</section>
-
-<section class="cj-section">
+<section class="cj-section cj-section--page-first">
     <div class="cj-container cj-booking-grid">
         <div class="cj-card">
             <h2>Booking Form</h2>
@@ -41,7 +39,7 @@
                     <label>Patient Requirements</label>
                     <textarea class="cj-form__textarea" rows="4" placeholder="Describe the patient's condition and care needs"></textarea>
                 </div>
-                <button type="submit" class="cj-btn cj-btn--primary" style="width:100%;">Submit Booking Request</button>
+                <button type="submit" class="cj-btn cj-btn--primary cj-btn--block">Submit Booking Request</button>
             </form>
         </div>
         <div class="cj-card">
@@ -54,10 +52,12 @@
                 <li><?= hc_icon('circle-check', 'sm') ?> 24×7 Emergency Support</li>
                 <li><?= hc_icon('circle-check', 'sm') ?> Personalized Care Plans</li>
             </ul>
-            <div style="margin-top:2rem;">
+            <div class="cj-booking-call">
                 <p><strong>Or call us directly:</strong></p>
-                <a href="<?= hc_phone_link() ?>" class="cj-btn cj-btn--blue" style="margin-top:0.5rem;"><?= esc(hc_config()->phoneDisplay) ?></a>
+                <a href="<?= hc_phone_link() ?>" class="cj-btn cj-btn--blue"><?= esc(hc_config()->phoneDisplay) ?></a>
             </div>
         </div>
     </div>
 </section>
+
+<?= view('partials/cta-banner') ?>

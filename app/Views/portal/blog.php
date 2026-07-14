@@ -1,15 +1,18 @@
-<?= view('partials/breadcrumb') ?>
+<?= view('partials/page-hero', [
+    'heroTag'      => 'Blog',
+    'heroTitle'    => 'Care Tips & <span>Health Guides</span>',
+    'heroSubtitle' => 'Tips, guides, and insights on home nursing and patient care.',
+    'heroImage'    => hc_service_image('post-surgical-care.png'),
+]) ?>
 
-<section class="cj-page-hero">
-    <div class="cj-container">
-        <h1 class="cj-page-hero__title">Blog</h1>
-        <p class="cj-page-hero__subtitle">Tips, guides, and insights on home nursing and patient care</p>
-    </div>
-</section>
-
-<section class="cj-section">
+<section class="cj-section cj-section--page-first">
     <div class="cj-container">
         <?php $posts = hc_config()->blogPosts; $featured = $posts[0]; $rest = array_slice($posts, 1); ?>
+
+        <div class="cj-heading">
+            <h2 class="cj-heading__title">Latest <span class="cj-text-primary">Articles</span></h2>
+            <div class="cj-heading__line"></div>
+        </div>
 
         <a href="<?= site_url('blog/' . $featured['slug']) ?>" class="cj-blog-featured">
             <img src="<?= hc_photo($featured['image']) ?>" alt="<?= esc($featured['title']) ?>" loading="lazy">
@@ -17,7 +20,7 @@
                 <span class="cj-blog-meta"><?= date('M d, Y', strtotime($featured['date'])) ?></span>
                 <h2><?= esc($featured['title']) ?></h2>
                 <p><?= esc($featured['excerpt']) ?></p>
-                <span class="cj-service-card__link">Read more →</span>
+                <span class="cj-service-card__link">Read more &rarr;</span>
             </div>
         </a>
 

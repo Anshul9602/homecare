@@ -1,15 +1,12 @@
-<?= view('partials/breadcrumb') ?>
+<?= view('partials/page-hero', [
+    'heroTag'      => 'Legal',
+    'heroTitle'    => 'Terms &amp; <span>Conditions</span>',
+    'heroSubtitle' => 'Last updated: July 2026',
+]) ?>
 
-<section class="cj-page-hero">
+<section class="cj-section cj-section--page-first">
     <div class="cj-container">
-        <h1 class="cj-page-hero__title"><?= esc(lang('App.termsTitle')) ?></h1>
-        <p class="cj-page-hero__subtitle">Last updated: July 2026</p>
-    </div>
-</section>
-
-<section class="cj-section">
-    <div class="cj-container">
-        <div class="cj-card" style="max-width:800px;margin:0 auto;">
+        <div class="cj-card cj-legal-content">
             <h2>1. Acceptance of Terms</h2>
             <p>By accessing or using the <?= esc(hc_config()->brandName) ?> website or services, you agree to be bound by these Terms &amp; Conditions.</p>
             <h2>2. Services</h2>
@@ -25,3 +22,5 @@
         </div>
     </div>
 </section>
+
+<?= view('partials/cta-banner') ?>

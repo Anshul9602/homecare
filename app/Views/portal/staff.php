@@ -1,14 +1,19 @@
-<?= view('partials/breadcrumb') ?>
+<?= view('partials/page-hero', [
+    'heroTag'      => 'Our Team',
+    'heroTitle'    => 'Meet Our <span>Verified Staff</span>',
+    'heroSubtitle' => 'Experienced nurses, GDA staff, physiotherapists, and caregivers across Jaipur.',
+    'heroImage'    => hc_service_image('dressing-wound-care.png'),
+    'heroButtons'  => [
+        ['label' => 'Book a Caregiver', 'url' => site_url('book-now'), 'style' => 'primary'],
+    ],
+]) ?>
 
-<section class="cj-page-hero cj-page-hero--image" style="background-image:url('<?= hc_photo('staff-hero') ?>')">
+<section class="cj-section cj-section--page-first">
     <div class="cj-container">
-        <h1 class="cj-page-hero__title">Our Staff</h1>
-        <p class="cj-page-hero__subtitle">Meet our verified nurses, GDA staff, physiotherapists, and caregivers</p>
-    </div>
-</section>
-
-<section class="cj-section">
-    <div class="cj-container">
+        <div class="cj-heading">
+            <h2 class="cj-heading__title">Our <span class="cj-text-primary">Staff</span></h2>
+            <div class="cj-heading__line"></div>
+        </div>
         <div class="cj-staff-filters">
             <button class="cj-staff-filter cj-staff-filter--active" data-filter="all">All</button>
             <button class="cj-staff-filter" data-filter="nurses">Nurses</button>

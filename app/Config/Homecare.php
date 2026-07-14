@@ -32,24 +32,23 @@ class Homecare extends BaseConfig
     public array $aboutHighlights = [
         ['icon' => 'shield', 'title' => 'Verified Caregivers'],
         ['icon' => 'check', 'title' => 'Background Checked'],
-        ['icon' => 'nurse', 'title' => 'Qualified Professionals'],
-        ['icon' => 'clock', 'title' => '24×7 Availability'],
-        ['icon' => 'heart', 'title' => 'Compassionate Care'],
-        ['icon' => 'home', 'title' => 'Home-Based Service'],
+        ['icon' => 'nurse', 'title' => 'GDA Professionals'],
+        ['icon' => 'clock', 'title' => 'Emergency Support'],
+        ['icon' => 'heart', 'title' => 'Quality Care'],
     ];
 
     public array $aboutWhyChoose = [
         ['icon' => 'shield', 'title' => 'Verified & Trusted Staff', 'desc' => 'Every nurse and caregiver is background verified and skill assessed before joining your home.'],
-        ['icon' => 'heart', 'title' => 'Personalized Care Plans', 'desc' => 'Custom care plans designed around each patient\'s medical needs and family preferences.'],
-        ['icon' => 'clock', 'title' => '24×7 Emergency Support', 'desc' => 'Round-the-clock helpline and rapid caregiver dispatch across Jaipur when you need urgent help.'],
+        ['icon' => 'nurse', 'title' => 'Trained GDA & Nurses', 'desc' => 'Registered nurses and trained GDA staff with hands-on experience in home and post-surgical care.'],
+        ['icon' => 'heart', 'title' => 'ICU & Critical Care Experts', 'desc' => 'ICU-level home nursing with ventilator support, monitoring, and critical care expertise.'],
+        ['icon' => 'clock', 'title' => '24×7 Support Available', 'desc' => 'Round-the-clock helpline and rapid caregiver dispatch across Jaipur when you need urgent help.'],
         ['icon' => 'rupee', 'title' => 'Affordable Packages', 'desc' => 'Transparent pricing with flexible hourly, daily, and monthly care packages for every budget.'],
-        ['icon' => 'nurse', 'title' => 'Experienced Nurses', 'desc' => 'Registered male and female nurses with hands-on experience in home and post-surgical care.'],
-        ['icon' => 'users', 'title' => 'Dedicated Care Team', 'desc' => 'A coordinated team of nurses, GDA staff, and coordinators supporting your family end to end.'],
+        ['icon' => 'home', 'title' => 'Care at Your Home', 'desc' => 'Professional nursing and patient care delivered in the comfort and safety of your home.'],
     ];
 
     public array $journey = [
         ['year' => '2015', 'icon' => 'home', 'title' => 'Company Started', 'desc' => 'Care Jaipur began with a mission to bring hospital-quality nursing care into homes across Jaipur.'],
-        ['year' => '2018', 'icon' => 'users', 'title' => 'Team Expansion', 'desc' => 'Grew our network of verified nurses, GDA staff, and patient attendants to serve more families.'],
+        ['year' => '2018', 'icon' => 'users', 'title' => '1000+ Families Served', 'desc' => 'Grew our network of verified nurses, GDA staff, and patient attendants to serve more families.'],
         ['year' => '2021', 'icon' => 'nurse', 'title' => 'ICU Care at Home', 'desc' => 'Launched ICU-level home nursing with ventilator support and critical care monitoring.'],
         ['year' => '2024', 'icon' => 'network', 'title' => 'Citywide Coverage', 'desc' => 'Expanded services to 15+ neighborhoods with 24×7 emergency response across Jaipur.'],
         ['year' => '2026', 'icon' => 'shield', 'title' => 'Trusted by 5000+ Families', 'desc' => 'Recognized as one of Jaipur\'s most trusted home healthcare providers by families and partners.'],
@@ -63,6 +62,15 @@ class Homecare extends BaseConfig
         ['name' => 'Sunita Devi', 'role' => 'Elder Care Lead', 'exp' => '9+ Years', 'image' => 'staff-4'],
     ];
 
+    public array $certifications = [
+        ['icon' => 'shield', 'label' => 'ISO', 'sublabel' => 'Certified'],
+        ['icon' => 'check', 'label' => 'Background', 'sublabel' => 'Verified'],
+        ['icon' => 'nurse', 'label' => 'First Aid', 'sublabel' => 'Certified'],
+        ['icon' => 'location', 'label' => 'Emergency', 'sublabel' => 'Response'],
+        ['icon' => 'star', 'label' => 'Quality', 'sublabel' => 'Assured'],
+        ['icon' => 'users', 'label' => 'Trusted by', 'sublabel' => 'Thousands'],
+    ];
+
     public array $values = [
         ['icon' => 'heart', 'title' => 'Compassion', 'desc' => 'We treat every patient with empathy, dignity, and respect.'],
         ['icon' => 'shield', 'title' => 'Trust', 'desc' => 'Families rely on us for safe, verified, and professional care.'],
@@ -73,21 +81,12 @@ class Homecare extends BaseConfig
     ];
 
     public array $careProcess = [
-        ['num' => 1, 'icon' => 'phone', 'title' => 'Call / Inquiry', 'desc' => 'Reach us by phone or WhatsApp with your care requirements.'],
-        ['num' => 2, 'icon' => 'clipboard', 'title' => 'Assessment', 'desc' => 'We assess the patient\'s condition and home care needs.'],
+        ['num' => 1, 'icon' => 'phone', 'title' => 'Call / Inquiry', 'desc' => 'Share your care requirements with our team.'],
+        ['num' => 2, 'icon' => 'clipboard', 'title' => 'Assessment', 'desc' => 'We evaluate the patient\'s condition and home care needs.'],
         ['num' => 3, 'icon' => 'consult', 'title' => 'Care Plan', 'desc' => 'A personalized care plan is created for your family.'],
-        ['num' => 4, 'icon' => 'users', 'title' => 'Caregiver Match', 'desc' => 'We assign the best-suited nurse or GDA for your case.'],
-        ['num' => 5, 'icon' => 'home', 'title' => 'Care Begins', 'desc' => 'Professional care starts at your home on schedule.'],
-        ['num' => 6, 'icon' => 'heart', 'title' => 'Ongoing Support', 'desc' => 'We monitor care quality and provide 24×7 backup support.'],
-    ];
-
-    public array $certifications = [
-        ['icon' => 'shield', 'title' => 'Background Verified Staff'],
-        ['icon' => 'check', 'title' => 'Trained Professionals'],
-        ['icon' => 'nurse', 'title' => 'Registered Nurses'],
-        ['icon' => 'heart', 'title' => 'Patient Safety Standards'],
-        ['icon' => 'home', 'title' => 'Home Care Compliant'],
-        ['icon' => 'star', 'title' => 'Quality Assured Service'],
+        ['num' => 4, 'icon' => 'users', 'title' => 'Assign Caregiver', 'desc' => 'We assign the best-suited nurse or GDA for your case.'],
+        ['num' => 5, 'icon' => 'home', 'title' => 'Start Care', 'desc' => 'Professional care begins at your home on schedule.'],
+        ['num' => 6, 'icon' => 'heart', 'title' => 'Follow Up', 'desc' => 'We monitor quality and provide ongoing 24×7 support.'],
     ];
 
     public array $seoKeywords = [

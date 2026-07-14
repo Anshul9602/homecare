@@ -8,6 +8,11 @@
                 <img src="<?= hc_logo() ?>" alt="<?= esc(hc_config()->brandName) ?> — Home Healthcare Jaipur" class="cj-logo__img" width="160" height="44">
             </a>
             <p class="cj-footer__desc">Compassionate, professional home nursing &amp; patient care across Jaipur. Available 24×7.</p>
+            <div class="cj-footer__social">
+                <a href="#" aria-label="Facebook"><?= hc_icon('facebook', 'sm') ?></a>
+                <a href="#" aria-label="Instagram"><?= hc_icon('instagram', 'sm') ?></a>
+                <a href="#" aria-label="LinkedIn"><?= hc_icon('linkedin', 'sm') ?></a>
+            </div>
         </div>
         <div>
             <h4>Services</h4>
@@ -38,8 +43,12 @@
         </div>
     </div>
     <div class="cj-footer__bottom">
-        <div class="cj-container">
+        <div class="cj-container cj-footer__bottom-inner">
             <p>&copy; <?= date('Y') ?> <?= esc(hc_config()->brandName) ?>. All Rights Reserved.</p>
+            <div class="cj-footer__legal">
+                <a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a>
+                <a href="<?= site_url('terms-and-conditions') ?>">Terms &amp; Conditions</a>
+            </div>
         </div>
     </div>
 </footer>
