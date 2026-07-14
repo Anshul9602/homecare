@@ -6,49 +6,75 @@
    Design Tokens
    -------------------------------------------------------------------------- */
 :root {
+    /* Brand */
     --cj-primary: #0F9387;
+    --cj-primary-hover: #0B7B71;
     --cj-primary-dark: #0A6D64;
-    --cj-primary-light: #D9F5F2;
-    --cj-primary-hover: #13A79A;
+    --cj-primary-light: #E8F8F6;
     --cj-primary-rgb: 15, 147, 135;
+    --cj-gradient: linear-gradient(135deg, #0F9387 0%, #16A34A 100%);
 
+    /* CTA & Status */
     --cj-blue: #2563EB;
     --cj-blue-dark: #1D4ED8;
     --cj-blue-light: #EFF6FF;
-
+    --cj-success: #22C55E;
     --cj-whatsapp: #25D366;
     --cj-whatsapp-dark: #1DA851;
 
+    /* Surfaces */
     --cj-white: #FFFFFF;
-    --cj-bg-gray: #F8FAFB;
-    --cj-border: #E5E7EB;
-    --cj-border-light: #F0F2F4;
+    --cj-bg-gray: #F8FAFC;
+    --cj-border: #E2E8F0;
+    --cj-border-light: #F1F5F9;
 
-    --cj-text-dark: #1A1A1A;
-    --cj-text: #555555;
-    --cj-text-muted: #7A7A7A;
+    /* Typography */
+    --cj-heading: #16213E;
+    --cj-text: #334155;
+    --cj-text-muted: #64748B;
 
-    --cj-success: #16A34A;
     --cj-warning: #F59E0B;
     --cj-danger: #DC2626;
     --cj-star: #FBBF24;
 
-    --cj-font: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    /* Legacy aliases */
+    --cj-text-dark: var(--cj-heading);
+
+    /* Font & Scale */
+    --cj-font: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    --cj-fs-hero: clamp(2.25rem, 5vw, 3.5rem);   /* 56px */
+    --cj-fs-h1: clamp(2rem, 4vw, 3rem);            /* 48px */
+    --cj-fs-h2: clamp(1.75rem, 3vw, 2.5rem);       /* 40px */
+    --cj-fs-h3: clamp(1.375rem, 2.5vw, 2rem);     /* 32px */
+    --cj-fs-h4: 1.5rem;                            /* 24px */
+    --cj-fs-body: 1rem;                            /* 16px */
+    --cj-fs-small: 0.875rem;                       /* 14px */
+    --cj-fs-btn: 1rem;                             /* 16px */
+
+    /* Radius */
+    --cj-radius-btn: 12px;
+    --cj-radius-input: 10px;
+    --cj-radius-card: 20px;
     --cj-radius-sm: 8px;
-    --cj-radius: 10px;
-    --cj-radius-lg: 12px;
-    --cj-radius-xl: 16px;
+    --cj-radius: var(--cj-radius-input);
+    --cj-radius-lg: var(--cj-radius-card);
+    --cj-radius-xl: 24px;
     --cj-radius-full: 9999px;
 
-    --cj-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
-    --cj-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    --cj-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.1);
-    --cj-shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.12);
-    --cj-shadow-hover: 0 12px 28px rgba(15, 147, 135, 0.15);
+    /* Shadows */
+    --cj-shadow-sm: 0 1px 3px rgba(15, 147, 135, 0.04);
+    --cj-shadow: 0 10px 40px rgba(15, 147, 135, 0.08);
+    --cj-shadow-md: 0 16px 48px rgba(15, 147, 135, 0.1);
+    --cj-shadow-lg: 0 20px 56px rgba(15, 147, 135, 0.12);
+    --cj-shadow-hover: 0 16px 48px rgba(15, 147, 135, 0.14);
 
+    /* Spacing */
+    --cj-section-pad: 6.25rem;   /* 100px */
+    --cj-card-pad: 2rem;         /* 32px */
     --cj-container: 1200px;
-    --cj-header-height: 72px;
-    --cj-transition: 0.25s ease;
+    --cj-header-height: 76px;
+    --cj-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* --------------------------------------------------------------------------
@@ -169,14 +195,17 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    background: var(--cj-primary);
+    width: 2.75rem;
+    height: 2.75rem;
+    background: var(--cj-gradient);
     color: var(--cj-white);
-    font-size: 1.5rem;
-    font-weight: 700;
-    border-radius: var(--cj-radius-sm);
+    border-radius: var(--cj-radius-btn);
     line-height: 1;
+    box-shadow: 0 4px 14px rgba(15, 147, 135, 0.25);
+}
+
+.cj-logo__icon .cj-lucide {
+    stroke: currentColor;
 }
 
 .cj-logo__text {
@@ -187,8 +216,9 @@ button {
 
 .cj-logo__text strong {
     font-size: 1.125rem;
-    font-weight: 700;
-    color: var(--cj-text-dark);
+    font-weight: 800;
+    color: var(--cj-heading);
+    letter-spacing: -0.02em;
 }
 
 .cj-logo__text small {
@@ -297,11 +327,11 @@ button {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    font-size: 0.9375rem;
+    padding: 0.875rem 1.75rem;
+    font-size: var(--cj-fs-btn);
     font-weight: 600;
     line-height: 1.4;
-    border-radius: var(--cj-radius);
+    border-radius: var(--cj-radius-btn);
     border: 2px solid transparent;
     cursor: pointer;
     transition: background var(--cj-transition), color var(--cj-transition),
